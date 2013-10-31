@@ -1,6 +1,7 @@
 body {
 	background: url(img/bg.jpg) repeat-x;
 	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 60px;
 }
 
 .container {
@@ -20,9 +21,21 @@ body {
 	display: block;
 }
 
-.sources {
-	
+.credit {
+	color: #fff;
+	font-size: 18px;
+	text-shadow: 0 2px 3px #000;
+	margin: 60px 20px 40px 0;
 }
+.credit .name a,
+.credit .name a:visited {
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+	text-decoration: underline;
+}
+.credit .name a:hover,
+.credit .name a:active {text-decoration: none;}
 
 code {
 	border-radius: 3px;
