@@ -1,4 +1,4 @@
-TF-Radio-Site
+TF Radio Site
 =============
 
 Web page for Arma III: TF Radio Mod
