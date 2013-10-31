@@ -1,0 +1,42 @@
+body {
+	background: url(img/bg.jpg) repeat-x;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	width: 960px;
+}
+
+.header { /* Contains logo, credits and links */
+	height: 380px;
+}
+
+.radio {
+	margin-top: 20px; 
+}
+
+.logo {
+	margin-top: 20px;
+	display: block;
+}
+
+.sources {
+	
+}
+
+code {
+	border-radius: 3px;
+	background-color: rgb(248, 248, 248);
+	border: 1px solid rgb(221, 221, 221);
+	border-bottom-style: solid;
+	color: rgb(119, 119, 119);
+	display: inline;
+	font-family: Consolas, 'Liberation Mono', Courier, monospace;
+	font-size: 12px;
+	height: auto;
+	line-height: 20px;
+	margin-bottom: 0 2px;
+	padding-bottom: 0 5px;
+	white-space: nowrap;
+	width: auto;
+}
