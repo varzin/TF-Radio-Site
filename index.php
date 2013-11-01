@@ -10,11 +10,11 @@ spl_autoload_register(function($class){
 });
 
 # Get Markdown class
-use \Michelf\Markdown;
+use \Michelf\MarkdownExtra;
 
 # Read file and pass content through the Markdown praser
 $text = file_get_contents('example-md/README.md');
-$html = Markdown::defaultTransform($text);
+$html = MarkdownExtra::defaultTransform($text);
 
 ?>
 
@@ -26,6 +26,7 @@ $html = Markdown::defaultTransform($text);
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" media="screen">
 		
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		
@@ -41,6 +42,9 @@ $html = Markdown::defaultTransform($text);
 <a href="https://github.com/michail-nikolaev/task-force-arma-3-radio" target="_blank">
 	<img style="position: absolute; top: 0; right: 0; border: 0; z-index:100;" src="img/github-ribbon.png" alt="Fork me on GitHub">
 </a>
+<div style="position:absolute;left:0;top:0;z-index:99;width:100%;height:20px;text-align:center;color:white;font-weight:600;font-size:12px;background-image: -moz-linear-gradient(bottom, #f17101 0%, #f9a103 100%);background-image: -o-linear-gradient(bottom, #f17101 0%, #f9a103 100%);background-image: -webkit-linear-gradient(bottom, #f17101 0%, #f9a103 100%);background-image: linear-gradient(bottom, #f17101 0%, #f9a103 100%);">
+	Страница находится в разработке.
+</div>
 
 <div class="container">
 	<div class="row">
@@ -61,22 +65,23 @@ $html = Markdown::defaultTransform($text);
 						<div class="name"><a href="#">[TF]Nkey</a></div>
 					</div>
 					<div class="credit pull-left">
-						Created by
-						<div class="name"><a href="#">[TF]Nkey</a></div>
+						Thanks to
+						<div class="name">
+							<a href="#">Name</a>, <a href="#">Name</a>, <a href="#">Name</a>
+						</div>
 					</div>
 				</div>
 
 				<button type="button" class="btn btn-primary btn-lg">
-					<span class="glyphicon glyphicon-cloud-download"></span>&nbsp;Скачать
+					<span class="glyphicon glyphicon-cloud-download"></span>&nbsp;Скачать рацию
 				</button>
-			</div><!-- /.header -->	
-					
 				
-				<?php
-			# Put HTML content in the document
-			echo $html;
-		?>
+				<button type="button" class="btn btn-default btn-lg">
+					<span class="glyphicon glyphicon-envelope"></span>&nbsp;Написать автору
+				</button>
+			</div><!-- /.header -->						
 				
+			<?php echo $html; ?><!-- Put HTML content in the document -->
 					
 		</div><!-- Right col end -->
 	</div><!-- /.row -->
