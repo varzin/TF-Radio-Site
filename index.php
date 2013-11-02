@@ -84,31 +84,30 @@ $html = MarkdownExtra::defaultTransform($text);
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="writeToAuthor" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
+							
 							<div class="modal-header">
 								<a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
 								<h4 class="modal-title" id="writeToAuthor">Написать автору</h4>
 							</div>
-							<div class="modal-body">
-							
-								<div class="alert alert-danger">Введите корректный email</div>
+							<div class="modal-body">							
+								<div class="alert alert-danger hidden" id="check-form-message"></div><!-- Form validation alerts -->
 							
 								<!-- Modal contents -->
-								<form role="mailForm">
+								<form role="form" id="mailForm" onSubmit="return checkForm(this)">
 									<div class="form-group">
 										<label for="mailForm-email">Ваш email</label>
-										<input type="email" class="form-control" id="mailForm-email" placeholder="my@email.ru">
+										<input type="email" class="form-control" id="mailForm-email" placeholder="my@email.ru" check_pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" check_message="Введите правильный email">
 									</div>
 									<div class="form-group">
 										<label for="mailForm-message">Сообщение</label>
-										<textarea class="form-control" id="mailForm-message" rows="5" placeholder="Спасибо! Это лучшая рация, с которой мы играли!"></textarea>
+										<textarea class="form-control" id="mailForm-message" rows="5" placeholder="Спасибо! Это лучшая рация, с которой мы играли!" check_message="Вы ничего не написали"></textarea>
 									</div>
-								</form>
-								
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-									<button type="submit" class="btn btn-primary" form="mailForm">Отправить</button>
-								</div>
+								</form>								
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+								<button type="submit" class="btn btn-primary" form="mailForm">Отправить</button>
+							</div>
 								
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
@@ -120,8 +119,7 @@ $html = MarkdownExtra::defaultTransform($text);
 					
 		</div><!-- Right col end -->
 	</div><!-- /.row -->
-</div>
-
+</div>s
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
