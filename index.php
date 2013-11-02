@@ -76,12 +76,47 @@ $html = MarkdownExtra::defaultTransform($text);
 					<span class="glyphicon glyphicon-cloud-download"></span>&nbsp;Скачать рацию
 				</button>
 				
-				<button type="button" class="btn btn-default btn-lg">
+				<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
 					<span class="glyphicon glyphicon-envelope"></span>&nbsp;Написать автору
 				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="writeToAuthor" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+								<h4 class="modal-title" id="writeToAuthor">Написать автору</h4>
+							</div>
+							<div class="modal-body">
+							
+								<div class="alert alert-danger">Введите корректный email</div>
+							
+								<!-- Modal contents -->
+								<form role="mailForm">
+									<div class="form-group">
+										<label for="mailForm-email">Ваш email</label>
+										<input type="email" class="form-control" id="mailForm-email" placeholder="my@email.ru">
+									</div>
+									<div class="form-group">
+										<label for="mailForm-message">Сообщение</label>
+										<textarea class="form-control" id="mailForm-message" rows="5" placeholder="Спасибо! Это лучшая рация, с которой мы играли!"></textarea>
+									</div>
+								</form>
+								
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+									<button type="submit" class="btn btn-primary" form="mailForm">Отправить</button>
+								</div>
+								
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+				
 			</div><!-- /.header -->						
 				
-			<?php echo $html; ?><!-- Put HTML content in the document -->
+			<?php echo $html; ?><!-- MARKDOWN GOES HERE -->
 					
 		</div><!-- Right col end -->
 	</div><!-- /.row -->
@@ -90,5 +125,6 @@ $html = MarkdownExtra::defaultTransform($text);
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
