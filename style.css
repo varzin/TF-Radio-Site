@@ -1,7 +1,17 @@
 body {
-	background: url(img/bg.jpg) repeat-x;
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 60px;
+
+	/*background: url(img/bg.jpg) repeat-x;*/
+    background-repeat: no-repeat;
+    background-image: 
+    	url(img/bg-fade.png), 
+    	url(img/bg-blur.jpg);
+    background-position: 
+    	center 0;
+    background-size: 
+    	1500px 380px,
+    	100% 380px; 
 }
 
 .container {

@@ -59,7 +59,7 @@ $html = MarkdownExtra::defaultTransform($text);
 		<div class="col-xs-8 col-xs-offset-1">
 			
 			<div class="header">
-				<img class="logo" src="img/logo.png" alt="Radio">
+				<img class="logo hires" width="425" height="69" src="img/logo.png" alt="Radio">
 
 				<div class="clearfix">
 					<div class="credit pull-left">
