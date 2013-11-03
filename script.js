@@ -1,6 +1,7 @@
+
 function checkFormAlert(alertMessage) {
   $("#check-form-message").text(alertMessage)
-    .removeClass("hidden");
+    .removeClass("hide");
 }
 
 function checkForm(obj, elems) {  
@@ -34,3 +35,4 @@ var element, pattern;
   } 
 return true;  
 }
+

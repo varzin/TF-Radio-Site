@@ -28,6 +28,8 @@ $html = MarkdownExtra::defaultTransform($text);
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
 	<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" media="screen">
 		
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+		
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -62,22 +64,22 @@ $html = MarkdownExtra::defaultTransform($text);
 				<div class="clearfix">
 					<div class="credit pull-left">
 						Created by
-						<div class="name"><a href="#">[TF]Nkey</a></div>
+						<div class="name"><a href="#" target="_blank">[TF]Nkey</a></div>
 					</div>
 					<div class="credit pull-left">
 						Thanks to
-						<div class="name">
-							<a href="#">Name</a>, <a href="#">Name</a>, <a href="#">Name</a>
+						<div class="name thanks">
+							<a href="http://forum.task-force.ru/index.php?action=profile;u=7" target="_blank">[TF]MTF</a>, <a href="http://forum.task-force.ru/index.php?action=profile;u=14" target="_blank">[TF]Hardckor</a>, Andrey Z.
 						</div>
 					</div>
 				</div>
 
-				<button type="button" class="btn btn-primary btn-lg">
-					<span class="glyphicon glyphicon-cloud-download"></span>&nbsp;Скачать рацию
-				</button>
+				<a href="#" class="btn btn-primary btn-lg">
+					<span class="fa fa-cloud-download fa-lg"></span>&nbsp;Скачать рацию
+				</a>
 				
 				<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
-					<span class="glyphicon glyphicon-envelope"></span>&nbsp;Написать автору
+					<span class="fa fa-pencil fa-lg"></span>&nbsp;Написать автору
 				</button>
 
 				<!-- Modal -->
@@ -90,17 +92,17 @@ $html = MarkdownExtra::defaultTransform($text);
 								<h4 class="modal-title" id="writeToAuthor">Написать автору</h4>
 							</div>
 							<div class="modal-body">							
-								<div class="alert alert-danger hidden" id="check-form-message"></div><!-- Form validation alerts -->
+								<div class="alert alert-danger hide" id="check-form-message"></div><!-- Form validation alerts -->
 							
 								<!-- Modal contents -->
-								<form role="form" id="mailForm" onSubmit="return checkForm(this)">
+								<form role="form" id="mailForm" method="post" action="mail.php" onSubmit="return checkForm(this)">
 									<div class="form-group">
-										<label for="mailForm-email">Ваш email</label>
-										<input type="email" class="form-control" id="mailForm-email" placeholder="my@email.ru" check_pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" check_message="Введите правильный email">
+										<label for="email">Ваш email</label>
+										<input type="email" class="form-control" name="email" placeholder="my@email.ru" check_pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" check_message="Введите правильный email.">
 									</div>
 									<div class="form-group">
 										<label for="mailForm-message">Сообщение</label>
-										<textarea class="form-control" id="mailForm-message" rows="5" placeholder="Спасибо! Это лучшая рация, с которой мы играли!" check_message="Вы ничего не написали"></textarea>
+										<textarea class="form-control" name="message" rows="5" placeholder="Спасибо! Это лучшая рация, с которой мы играли!" check_message="Вы ничего не написали."></textarea>
 									</div>
 								</form>								
 							</div>
@@ -111,7 +113,7 @@ $html = MarkdownExtra::defaultTransform($text);
 								
 						</div><!-- /.modal-content -->
 					</div><!-- /.modal-dialog -->
-				</div><!-- /.modal -->
+				</div><!-- /.modal -->				
 				
 			</div><!-- /.header -->						
 				
