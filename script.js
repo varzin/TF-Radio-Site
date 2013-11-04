@@ -51,3 +51,13 @@ $(function () { //Retina support. Use: Set real width and .hires class for image
      }
 });
 
+
+//Add IDs to H3 tags for scrollspy navigation
+// $( "#readme-content h3" ).each(function( index ) {
+//   $( this ).attr('id', 'readme-item-' + index ); // For each add ID: #readme-item-0, #readme-item-1, #readme-item-2, etc.
+// });
+
+
+
+
+

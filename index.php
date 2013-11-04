@@ -66,7 +66,7 @@ $html = MarkdownExtra::defaultTransform($text);
 						Created by
 						<div class="name"><a href="#" target="_blank">[TF]Nkey</a></div>
 					</div>
-					<div class="credit pull-left">
+					<div class="credit">
 						Thanks to
 						<div class="name thanks">
 							<a href="http://forum.task-force.ru/index.php?action=profile;u=7" target="_blank">[TF]MTF</a>, <a href="http://forum.task-force.ru/index.php?action=profile;u=14" target="_blank">[TF]Hardckor</a>, Andrey Z.
@@ -116,8 +116,10 @@ $html = MarkdownExtra::defaultTransform($text);
 				</div><!-- /.modal -->				
 				
 			</div><!-- /.header -->						
-				
-			<?php echo $html; ?><!-- MARKDOWN GOES HERE -->
+			
+			<div id="readme-content">	
+				<?php echo $html; ?><!-- MARKDOWN GOES HERE -->
+			</div>
 					
 		</div><!-- Right col end -->
 	</div><!-- /.row -->

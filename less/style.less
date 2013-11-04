@@ -1,0 +1,148 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 60px;
+  /*background: url(img/bg.jpg) repeat-x;*/
+
+  background-repeat: no-repeat;
+  background-image: 
+    url(img/bg-fade.png), 
+    url(img/bg-blur.jpg);
+  background-position: center 0;
+  background-size: 
+    1500px 380px,
+    100% 380px;
+}
+.container {
+  width: 960px;
+}
+.header {
+  /* Contains logo, credits and links */
+
+  height: 380px;
+}
+.radio {
+  margin-top: 20px;
+}
+.logo {
+  margin-top: 20px;
+  display: block;
+}
+.credit {
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 0 2px 3px #000;
+  margin: 60px 20px 40px 0;
+}
+.credit .name {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.credit .name.thanks {
+  font-size: 18px;
+  line-height: 28px;
+}
+.credit .name a,
+.credit .name a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+.credit .name a:hover,
+.credit .name a:active {
+  text-decoration: none;
+}
+#readme-content {
+  @readme-font-size: 14px;
+  @readme-line-height: 25px;
+  @readme-table-border: 1px solid #ddd;
+
+  font-size: @readme-font-size;
+  line-height: @readme-line-height;
+
+  blockquote {
+    margin: 20px 0;
+    padding: 0 20px;
+
+    p {
+      color: #777777;
+      font-size: @readme-font-size;
+      line-height: @readme-line-height;
+    }
+    
+  }
+
+  code {
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    border: 1px solid #dddddd;
+    border-bottom-style: solid;
+    color: #777777;
+    display: inline;
+    font-family: Consolas, 'Liberation Mono', Courier, monospace;
+    font-size: 12px;
+    height: auto;
+    line-height: 20px;
+    margin-bottom: 0 2px;
+    padding-bottom: 0 5px;
+    white-space: nowrap;
+    width: auto;
+  }
+
+  table {
+    margin-bottom: @readme-line-height;
+
+    //Cells padding and text
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          padding: 6px 13px;
+          font-size: @readme-font-size;
+          line-height: @readme-line-height;
+          vertical-align: top;
+        }
+      }
+    } 
+
+    //Border    
+    border: @readme-table-border;
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > th,
+        > td {
+          border: @readme-table-border;
+        }
+      }
+    }
+    > thead > tr {
+      > th,
+      > td {
+        border-bottom-width: 2px;
+      }
+    }
+    
+    //Striped table
+    & > tbody > tr:nth-child(odd) { 
+      > td,
+      > th {
+        background-color: #F7F7F9;
+      }
+    }
+
+
+  }
+  
+} //#readme-content end
+
+
+
+
+
+
+
+
+
