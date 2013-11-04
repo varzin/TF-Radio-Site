@@ -52,10 +52,21 @@ $(function () { //Retina support. Use: Set real width and .hires class for image
 });
 
 
-//Add IDs to H3 tags for scrollspy navigation
-// $( "#readme-content h3" ).each(function( index ) {
-//   $( this ).attr('id', 'readme-item-' + index ); // For each add ID: #readme-item-0, #readme-item-1, #readme-item-2, etc.
-// });
+// Script add IDs to H3 tags for scrollspy navigation
+$( "#readme-content h3" ).each(function( index ) {
+  $( this ).attr('id', 'readme-item-' + index ); // For each H3 add ID: #readme-item-0, #readme-item-1, #readme-item-2, etc.
+  var h3text = $(this).html(); // Get content of H3
+  $("#readme-nav ul").append("<li><a href='#readme-item-"+index+"'>"+h3text+"</a></li>"); //And create links in #readme-nav
+});
+
+// Prevent <a> default action and add smooth scroll to an element
+$("#readme-nav ul li a").click(function(e)  { 
+  e.preventDefault();
+  var href = $(this).attr("href");
+  $('html, body').animate({
+    scrollTop: $(href).offset().top
+  }, 1000);
+});
 
 
 

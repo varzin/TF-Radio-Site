@@ -45,14 +45,12 @@ $html = MarkdownExtra::defaultTransform($text);
 <a href="https://github.com/michail-nikolaev/task-force-arma-3-radio" target="_blank">
 	<img style="position: absolute; top: 0; right: 0; border: 0; z-index:100;" src="img/github-ribbon.png" alt="Fork me on GitHub">
 </a>
-<div class="top-alert">
-	Страница находится в разработке.
-</div>
+<div class="top-alert">Страница находится в разработке.</div>
 
 <div class="container">
 	<div class="row">
 		<!-- Left col -->
-		<div class="col-xs-3 text-right pos-relative">
+		<div class="col-xs-4 text-center">
 			<img class="radio" src="img/radio.png" alt="Radio">
 			
 			<p class="copyrights">
@@ -64,7 +62,7 @@ $html = MarkdownExtra::defaultTransform($text);
 		</div>
 		
 		<!-- Right col -->
-		<div class="col-xs-8 col-xs-offset-1">
+		<div class="col-xs-8">
 			
 			<div class="header">
 				<img class="logo hires" width="425" height="69" src="img/logo.png" alt="Radio">
@@ -129,7 +127,12 @@ $html = MarkdownExtra::defaultTransform($text);
 					</div><!-- /.modal-dialog -->
 				</div><!-- /.modal -->				
 				
-			</div><!-- /.header -->						
+			</div><!-- /.header -->	
+			
+			<nav id="readme-nav" class="navbar navbar-default" role="navigation">
+				<ul class="nav navbar-nav">
+				</ul>
+			</nav>					
 			
 			<div id="readme-content">	
 				<?php echo $html; ?><!-- MARKDOWN GOES HERE -->
@@ -137,10 +140,14 @@ $html = MarkdownExtra::defaultTransform($text);
 					
 		</div><!-- Right col end -->
 	</div><!-- /.row -->
-</div>
+</div><!-- /.container -->
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<!--<script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter22791004 = new Ya.Metrika({id:22791004, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/22791004" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
+
 </body>
 </html>

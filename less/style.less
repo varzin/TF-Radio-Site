@@ -11,21 +11,22 @@
 
 /* Styles
 ======================================== */
-.top-alert {
+.top-alert { // Place div.top-alert after <body>
   height:20px;
   text-align:center;
   color:white;
   font-weight:600;
   font-size:12px;
-  background-image: -moz-linear-gradient(bottom, #f17101 0%, #f9a103 100%);
-  background-image: -o-linear-gradient(bottom, #f17101 0%, #f9a103 100%);
-  background-image: -webkit-linear-gradient(bottom, #f17101 0%, #f9a103 100%);
-  background-image: linear-gradient(bottom, #f17101 0%, #f9a103 100%);  
+  @alert-gradient: bottom, #f17101 0%, #f9a103 100%;
+  background-image: -moz-linear-gradient(@alert-gradient);
+  background-image: -o-linear-gradient(@alert-gradient);
+  background-image: -webkit-linear-gradient(@alert-gradient);
+  background-image: linear-gradient(@alert-gradient);  
 }
 body {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 60px;
-  /*background: url(img/bg.jpg) repeat-x;*/
+  // background: url(img/bg.jpg) repeat-x; Old BG
 
   background-repeat: no-repeat;
   background-image: 
@@ -54,26 +55,27 @@ body {
 .credit {
   color: #fff;
   font-size: 18px;
-  text-shadow: 0 2px 3px #000;
+  text-shadow: 0 1px 2px #000;
   margin: 60px 20px 40px 0;
-}
-.credit .name {
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 600;
-}
-.credit .name.thanks {
-  font-size: 18px;
-  line-height: 28px;
-}
-.credit .name a,
-.credit .name a:visited {
-  color: #fff;
-  text-decoration: underline;
-}
-.credit .name a:hover,
-.credit .name a:active {
-  text-decoration: none;
+
+  .name {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+
+    &.thanks {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    a,
+    a:visited {
+      color: #fff;
+      text-decoration: underline;
+
+      &:hover {text-decoration: none;}
+    }
+  }
 }
 
 .copyrights {
@@ -177,12 +179,4 @@ body {
   }
   
 } //#readme-content end
-
-
-
-
-
-
-
-
 
