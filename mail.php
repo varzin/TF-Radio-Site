@@ -46,8 +46,8 @@ $text = $_REQUEST['message'];
 
 $subject = "Сайт рации. Письмо разработчику от ".$email;
 
-$header = "Content-Type: text/html; charset=utf-8 \r\n";
-$header	.= " From: <".$email.">\r\n\r\n";
+$header = "Content-Type: text/html; charset=utf-8 \r\n"
+."From: <".$email.">\r\n";
 
 	if (mail($to, '=?UTF-8?B?'.base64_encode($subject).'?=', $text, $header)) {
 			print "

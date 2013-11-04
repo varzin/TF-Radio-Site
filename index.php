@@ -21,6 +21,7 @@ $html = MarkdownExtra::defaultTransform($text);
 <html lang="ru">
 <head>
 	<title>Task Force Radio</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,15 +45,22 @@ $html = MarkdownExtra::defaultTransform($text);
 <a href="https://github.com/michail-nikolaev/task-force-arma-3-radio" target="_blank">
 	<img style="position: absolute; top: 0; right: 0; border: 0; z-index:100;" src="img/github-ribbon.png" alt="Fork me on GitHub">
 </a>
-<div style="position:absolute;left:0;top:0;z-index:99;width:100%;height:20px;text-align:center;color:white;font-weight:600;font-size:12px;background-image: -moz-linear-gradient(bottom, #f17101 0%, #f9a103 100%);background-image: -o-linear-gradient(bottom, #f17101 0%, #f9a103 100%);background-image: -webkit-linear-gradient(bottom, #f17101 0%, #f9a103 100%);background-image: linear-gradient(bottom, #f17101 0%, #f9a103 100%);">
+<div class="top-alert">
 	Страница находится в разработке.
 </div>
 
 <div class="container">
 	<div class="row">
 		<!-- Left col -->
-		<div class="col-xs-3 text-right">
+		<div class="col-xs-3 text-right pos-relative">
 			<img class="radio" src="img/radio.png" alt="Radio">
+			
+			<p class="copyrights">
+				Copyright&nbsp;2013<?php $y=date("Y"); if ($y != 2013) echo "—" .$y;?>&nbsp;<a href="http://forum.task-force.ru/index.php?action=profile;u=12">Nkey</a> <!-- Add year interval if year is not 2013 -->
+				<br>Сайт: <a href="http://forum.task-force.ru/index.php?action=profile;u=7">MTF</a>
+			</p>
+			<p class="copyrights">Форум отряда
+			<br><a href="http://task-force.ru">Task&nbsp;Force:&nbsp;Arrowhead</a></p>
 		</div>
 		
 		<!-- Right col -->
@@ -64,7 +72,7 @@ $html = MarkdownExtra::defaultTransform($text);
 				<div class="clearfix">
 					<div class="credit pull-left">
 						Created by
-						<div class="name"><a href="#" target="_blank">[TF]Nkey</a></div>
+						<div class="name"><a href="http://forum.task-force.ru/index.php?action=profile;u=12" target="_blank">[TF]Nkey</a></div>
 					</div>
 					<div class="credit">
 						Thanks to
@@ -74,13 +82,19 @@ $html = MarkdownExtra::defaultTransform($text);
 					</div>
 				</div>
 
-				<a href="#" class="btn btn-primary btn-lg">
-					<span class="fa fa-cloud-download fa-lg"></span>&nbsp;Скачать рацию
-				</a>
-				
-				<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
-					<span class="fa fa-pencil fa-lg"></span>&nbsp;Написать автору
-				</button>
+				<div class="clearfix">
+					<div class="pull-left margin-r-4">
+						<a href="https://github.com/michail-nikolaev/task-force-arma-3-radio/raw/master/releases/0.7.0%20beta.zip" class="btn btn-primary btn-lg">
+							<span class="fa fa-cloud-download fa-lg"></span>&nbsp;Скачать рацию
+						</a>
+						<p class="text-center opacity07 white">v0.7.0 beta от 15.09.2013</p>
+					</div>
+					<div class="pull-left margin-r-4">
+						<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">
+							<span class="fa fa-pencil fa-lg"></span>&nbsp;Написать автору
+						</button>
+					</div>
+				</div>	
 
 				<!-- Modal -->
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="writeToAuthor" aria-hidden="true">
@@ -89,7 +103,7 @@ $html = MarkdownExtra::defaultTransform($text);
 							
 							<div class="modal-header">
 								<a href="#" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
-								<h4 class="modal-title" id="writeToAuthor">Написать автору</h4>
+								<h4 class="modal-title" id="writeToAuthor">Письмо автору</h4>
 							</div>
 							<div class="modal-body">							
 								<div class="alert alert-danger hide" id="check-form-message"></div><!-- Form validation alerts -->
@@ -123,7 +137,7 @@ $html = MarkdownExtra::defaultTransform($text);
 					
 		</div><!-- Right col end -->
 	</div><!-- /.row -->
-</div>s
+</div>
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>

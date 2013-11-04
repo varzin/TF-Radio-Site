@@ -59,5 +59,3 @@ $(function () { //Retina support. Use: Set real width and .hires class for image
 
 
 
-
-

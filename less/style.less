@@ -1,3 +1,27 @@
+/* Helpers
+======================================== */
+.white {color: #fff;}
+
+.opacity07 {opacity: .7}
+.opacity05 {opacity: .5}
+
+.margin-r-4 {margin-right: 4px;}
+
+.pos-relative {position: relative;}
+
+/* Styles
+======================================== */
+.top-alert {
+  height:20px;
+  text-align:center;
+  color:white;
+  font-weight:600;
+  font-size:12px;
+  background-image: -moz-linear-gradient(bottom, #f17101 0%, #f9a103 100%);
+  background-image: -o-linear-gradient(bottom, #f17101 0%, #f9a103 100%);
+  background-image: -webkit-linear-gradient(bottom, #f17101 0%, #f9a103 100%);
+  background-image: linear-gradient(bottom, #f17101 0%, #f9a103 100%);  
+}
 body {
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 60px;
@@ -51,6 +75,22 @@ body {
 .credit .name a:active {
   text-decoration: none;
 }
+
+.copyrights {
+  text-align: left;
+  margin-left: 40px;
+  color: #999;
+
+  a {
+    color: #999;
+    text-decoration: underline;
+    &:visited,
+    &:active{color: #999;}
+
+    &:hover {color: #333;}
+  }
+}
+
 #readme-content {
   @readme-font-size: 14px;
   @readme-line-height: 25px;
