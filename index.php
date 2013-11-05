@@ -18,13 +18,13 @@ $html = MarkdownExtra::defaultTransform($text);
 
 ?>
 
+<!doctype html>
 <html lang="ru">
 <head>
 	<title>Task Force Radio</title>
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
 	<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" media="screen">
@@ -53,10 +53,8 @@ $html = MarkdownExtra::defaultTransform($text);
 		<div class="col-xs-4 text-center">
 			<img class="radio" src="img/radio.png" alt="Radio">
 			
-			<p class="copyrights">
-				Copyright&nbsp;2013<?php $y=date("Y"); if ($y != 2013) echo "—" .$y;?>&nbsp;<a href="http://forum.task-force.ru/index.php?action=profile;u=12">Nkey</a> <!-- Add year interval if year is not 2013 -->
-				<br>Сайт: <a href="http://forum.task-force.ru/index.php?action=profile;u=7">MTF</a>
-			</p>
+			<p class="copyrights">Copyright&nbsp;2013<?php $y=date("Y"); if ($y != 2013) echo "—" .$y;?>&nbsp;<a href="https://github.com/michail-nikolaev">Nkey</a> <!-- Add year interval if year is not 2013 -->
+			<br>Сайт: <a href="http://forum.task-force.ru/index.php?action=profile;u=7">MTF</a></p>
 			<p class="copyrights">Форум отряда
 			<br><a href="http://task-force.ru">Task&nbsp;Force:&nbsp;Arrowhead</a></p>
 		</div>
@@ -69,13 +67,14 @@ $html = MarkdownExtra::defaultTransform($text);
 
 				<div class="clearfix">
 					<div class="credit pull-left">
-						Created by
-						<div class="name"><a href="http://forum.task-force.ru/index.php?action=profile;u=12" target="_blank">[TF]Nkey</a></div>
+						Автор
+						<div class="name"><a href="https://github.com/michail-nikolaev" target="_blank">[TF]Nkey</a></div>
 					</div>
 					<div class="credit">
-						Thanks to
+						Благодарности
 						<div class="name thanks">
-							<a href="http://forum.task-force.ru/index.php?action=profile;u=7" target="_blank">[TF]MTF</a>, <a href="http://forum.task-force.ru/index.php?action=profile;u=14" target="_blank">[TF]Hardckor</a>, Andrey Z.
+							<a href="http://forum.task-force.ru/index.php?action=profile;u=7" target="_blank">[TF]MTF</a>, <a href="http://forum.task-force.ru/index.php?action=profile;u=14" target="_blank">[TF]Hardckor</a>, <a href="http://wogames.info/profile/TRUE/" target="_blank">TRUE</a>, <a href="http://arma3.ru/forums/index.php/user/41-blender/" target="_blank">Блендер</a>,
+							<br><a href="https://github.com/vinniefalco" target="_blank">Vinnie&nbsp;Falco</a>, <a href="http://task-force.ru" target="_blank">отряд&nbsp;TF</a>, <a href="http://wogames.info" target="_blank">проект&nbsp;WOG</a>
 						</div>
 					</div>
 				</div>
@@ -129,10 +128,14 @@ $html = MarkdownExtra::defaultTransform($text);
 				
 			</div><!-- /.header -->	
 			
-			<nav id="readme-nav" class="navbar navbar-default" role="navigation">
-				<ul class="nav navbar-nav">
-				</ul>
-			</nav>					
+			<div class="affix-container">
+				<nav id="readme-nav" class="navbar navbar-inverse" role="navigation"><!-- style="position:fixed; left:300px; top:10px; z-index:200;" -->
+					<ul class="nav navbar-nav">
+						<!-- NAVIGATION GOES HERE -->
+					</ul>
+				</nav>
+			</div>		
+			
 			
 			<div id="readme-content">	
 				<?php echo $html; ?><!-- MARKDOWN GOES HERE -->
