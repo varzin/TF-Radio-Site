@@ -96,5 +96,13 @@ $("#readme-nav ul li a").click(function(e)  {
 //Turn-on scrollspy
 $('body').scrollspy({ target: '#readme-nav', offset:110 });
 
+//Initialize tooltips
+$('.tooltip-trigger').tooltip();
+
+
+//Add version number below the download button
+var downloadVersion = $("#readme-content em:first-child").html();
+$( "#download-version" ).append(downloadVersion);
+
 
 

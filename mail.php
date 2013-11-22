@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Письмо автору</title>
+<title>Contact author</title>
 
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
 <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" media="screen">
@@ -52,16 +52,16 @@ $header = "Content-Type: text/html; charset=utf-8 \r\n"
 	if (mail($to, '=?UTF-8?B?'.base64_encode($subject).'?=', $text, $header)) {
 			print "
 			<div>
-				<h3>Спасибо за отзыв</h3>
-				<p>В скором времени автор получит ваше письмо.</p>
+				<h3>Thank you for your feedback</h3>
+				<p>Author will receive your letter soon.</p>
 				<p><a href='http://radio.task-force.ru' class='btn btn-default'>ОК</a></p>
 			</div>
 			";
 	} else {
 			print "
 			<div>
-				<h3>Кажется, что-то сломалось :(</h3>
-				<p><a href='javascript:history.back();' class='btn btn-default'>Вернуться назад</a></p>
+				<h3>Hmm, something wrong :(</h3>
+				<p><a href='javascript:history.back();' class='btn btn-default'>Go back</a></p>
 			</div>
 			";
 	}
