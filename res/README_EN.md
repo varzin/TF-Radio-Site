@@ -2,15 +2,15 @@ Task Force Arma 3 radio
 =======================
 
 Arma 3 Team Speak Radio Plugin
-_v0.8.1.5 (11.17.2013)_
+_v0.8.3 (12.18.2013)_
 
 ###Installation
 
-* Download and unzip [0.8.1. radio archive](https://github.com/michail-nikolaev/task-force-arma-3-radio/raw/master/releases/0.8.1.zip).
+* Download and unzip [0.8.3 radio archive](https://github.com/michail-nikolaev/task-force-arma-3-radio/raw/master/releases/0.8.3.zip).
 * Copy `TeamSpeak 3 Client` folder content to the TeamSpeak root folder.
 * Copy `Arma 3` folder content to the `...\SteamApps\common\Arma 3 folder`.
 
-> TF Radio uses the SBA (Community Base Addons) latest version. Therefore, if you’ve already installed this mod, Windows will prompt you to replace the folder.
+> TF Radio uses the CBA (Community Base Addons) latest version. Therefore, if you’ve already installed this mod, Windows will prompt you to replace the folder.
 
 
 ###Configuration
@@ -27,12 +27,14 @@ _v0.8.1.5 (11.17.2013)_
 
 > If you’ve got the same nick both in the game profile and TeamSpeak - plugin will change your nickname in TS during the game.
 
+> Make sure your game nickname contains at least 3 characters and not contains `@`.
+
 > It is not recommended to use the plugin with simultaneous connection to multiple servers in TeamSpeak.
 
 > It is recommended to disable the TeamSpeak built-in alert sounds: `Options> Notifications> Sound Pack: "Sounds Deactivated"`. To use this option, restart TeamSpeak.
 
 
-###Использование
+###Usage
 
 | Keys | Action |
 | --- | --- |
@@ -56,12 +58,12 @@ _v0.8.1.5 (11.17.2013)_
 
 | Radio | Side | Range/Distance | How to use |
 | --- | --- | --- | --- | 
-| Radio [AN/PRC-152](http://ru.wikipedia.org/wiki/AN/PRC-152) (personal) | <font color="blue">BLUEFOR<font> | 30-512Mhz / 3 km | To enter the frequency, press `CLR`, enter a value and press `ENT`. You can also switch the active radio channel by pressing the arrow keys (a total of 8 channels). You can change the reception volume pressing `PRE+` and `PRE-` keys.| 
-| Radio [RT-1523G (ASIP)](http://en.wikipedia.org/wiki/SINCGARS#Models) (long range) | <font color="blue">BLUEFOR<font> | 30-87Mhz / 20 km | To enter the frequency, press `MENU CLR`, enter a value and press `FREQ`. You can also switch the active radio channel by pressing the radio number buttons (a total of 9 channels). You can change the reception volume by `TIME` and `BATT CALL` keys.|
-| Radio [AN/PRC148-JEM](https://www.thalescomminc.com/ground/anprc148-jem.asp) (personal) | <font color="green">INDEPENDENT</font> | 30-512Mhz / 3 km | To enter the frequency, press `ESC`, enter a value and press `ENT`. You can also switch the active radio channel by pressing the arrow keys (a total of 8 channels). You can change the reception volume by `MOD` and `GR` keys| 
-| Radio [AN/PRC-155](http://www.gdc4s.com/anprc-155-2-channel-manpack.html) (long range)| <font color="green">INDEPENDENT</font>  | 30-87Mhz / 20 km | To enter the frequency, press `ESC`, enter a value and press `MENU`. You can also switch the active radio channel by pressing the arrow keys (up & down). You can change the reception volume by the loudspeaker button. | 
-| Radio [FADAK](http://www.iran.ru/news/politics/87228/Iran_prodemonstriroval_tri_novyh_obrazca_voennogo_naznacheniya) (personal) |  <font color="red">OPFOR</font> | 30-512Mhz / 3 km | To enter the frequency, press `CLR`, enter a value and press `ENT`. You can also switch the active radio channel by pressing `SET` and `PWR` (a total of 8 channels). You can change the reception volume by `DATA` and `SEND` keys.| 
-| Radio [MR3000](http://www.railce.com/cw/casc/rohde/m3tr.htm) (long range) | <font color="red">OPFOR</font> | 30-87Mhz / 20 km | To enter the frequency, press `CLR ESC`, enter a value and press `ENT`. You can also switch the active radio channel by pressing the radio number buttons or horizontal arrow buttons (a total of 8 channels). You can change the reception volume by vertical arrow buttons. | 
+| Radio [AN/PRC-152](http://en.wikipedia.org/wiki/AN/PRC-152) (personal) | <font color="blue">BLUEFOR<font> | 30-512Mhz / 3 km | To enter the frequency, press `CLR`, enter a value and press `ENT`. You can also switch the active radio channel by pressing the arrow keys (a total of 8 channels). You can change the reception volume pressing `PRE+` and `PRE-` keys. You can also change stereo setting by pressing `0`.| 
+| Radio [RT-1523G (ASIP)](http://en.wikipedia.org/wiki/SINCGARS#Models) (long range) | <font color="blue">BLUEFOR<font> | 30-87Mhz / 20 km | To enter the frequency, press `MENU CLR`, enter a value and press `FREQ`. You can also switch the active radio channel by pressing the radio number buttons (a total of 9 channels). You can change the reception volume by `TIME` and `BATT CALL` keys. You can also change stereo setting by pressing `STO`.|
+| Radio [AN/PRC148-JEM](https://www.thalescomminc.com/ground/anprc148-jem.asp) (personal) | <font color="green">INDEPENDENT</font> | 30-512Mhz / 3 km | To enter the frequency, press `ESC`, enter a value and press `ENT`. You can also switch the active radio channel by pressing the arrow keys (a total of 8 channels). You can change the reception volume by `MOD` and `GR` keys. You can also change stereo setting by pressing `ALT`.| 
+| Radio [AN/PRC-155](http://www.gdc4s.com/anprc-155-2-channel-manpack.html) (long range)| <font color="green">INDEPENDENT</font> | 30-87Mhz / 20 km | To enter the frequency, press `ESC`, enter a value and press `MENU`. You can also switch the active radio channel by pressing the arrow keys (up & down). You can change the reception volume by the loudspeaker button. You can also change stereo setting by pressing `PRE`.| 
+| Radio [FADAK](http://www.military.com/video/forces/military-foreign-forces/iran-unveils-3-new-military-products/2363087176001/) (personal) | <font color="red">OPFOR</font> | 30-512Mhz / 3 km | To enter the frequency, press `CLR`, enter a value and press `ENT`. You can also switch the active radio channel by pressing `SET` and `PWR` (a total of 8 channels). You can change the reception volume by `DATA` and `SEND` keys. You can also change stereo setting by pressing `0`.| 
+| Radio [MR3000](http://www.railce.com/cw/casc/rohde/m3tr.htm) (long range) | <font color="red">OPFOR</font> | 30-87Mhz / 20 km | To enter the frequency, press `CLR ESC`, enter a value and press `ENT`. You can also switch the active radio channel by pressing the radio number buttons or horizontal arrow buttons (a total of 8 channels). You can change the reception volume by vertical arrow buttons. You can also change stereo setting by pressing `0`. | 
 | Underwater transceiver | All | 32-41kHz / 70-300 m. (depending on waves) | To enter the frequency, press `MODE`, enter a value and press `ADV`. You can change the reception volume by the button on the right side of the device. | 
 
 
@@ -117,6 +119,16 @@ The plugin supports two operation modes - **serious** and **lightweight modes**.
 * To disable the automatic distribution of long range radios, add the following line to `init.sqf`: `tf_no_auto_long_range_radio = true`
 * To change the encryption codes used by factions (to allow multiple factions talking), add the following code: `tf_west_radio_code = "_bluefor";tf_east_radio_code = "_opfor"; tf_guer_radio_code = "_independent"; `. To allow two factions to contact one another by radio, they must have an identical encryption code (you'll need to change values).
 
+* To set active radio frequency of the local player you may use: `"34.5" call tf_setLongRangeRadioFrequency"`, `"123.5" call tf_setPersonalRadioFrequency`.
+* By default all players in the same group have equals frequencies. If you want to set equal frequencies for the faction: `tf_same_frequencies_for_side = true;`.
+* By default all players of faction have the same frequencies of long range radios. If you want to disable such feature (set the same LR frequencies for group only) use: `tf_same_lr_frequencies_for_side = false`.
+* Using `call generateSwSetting` and `call generateLrSettings` you may generate random settings for personal and LR radios accordingly. Result is array: `[active_channel, volume, frequencies..of..channels, reserved, stereo_setting]`. Such arrays are used in functions below.
+* Set values of `tf_freq_west`, `ft_freq_east` and `tf_freq_guer` together with `tf_same_sw_frequencies_for_side = true` to preset settings of personal radios for some faction. Similarly with  `tf_freq_west_lr`, `ft_freq_east_lr` and `ft_freq_east_lr` together with `tf_same_lr_frequencies_for_side = true`.
+* Set values `(group _player) setVariable["tf_lr_frequency", _value, true]` together with `tf_same_lr_frequencies_for_side = false` to preset LR radio settings for the players of some group. Similarly `tf_sw_frequency` together with `tf_same_sw_frequencies_for_side = false`.
+* `call tf_getTeamSpeakServerName` - get name of TeamSpeak server, `call tf_getTeamSpeakChannelName` - get name of TeamSpeak channel, `call tf_isTeamSpeakPluginEnabled` - is the TeamSpeak plugin active.
+* `tf_radio_channel_name` и `tf_radio_channel_password` - change name and password for serious mode channel.
+* To force vehicle side: `_vehicle setVariable ["tf_side", _value, true]`. Possible values: `"west"`, `"east"`, `"guer".
+
 #####To TeamSpeak servers admins
 To be on the safe side, reduce the level of flood protection: `Right-click on the server> Edit Virtual Server> More> Anti Flood`, set 30, 300, 3000 values (top to bottom).
 
@@ -129,10 +141,17 @@ If this implementation ever becomes popular, it’d be great to avoid piles of i
 * [MTF](http://forum.task-force.ru/index.php?action=profile;u=7) ([varzin](https://github.com/varzin)) for the help with graphics and documentation.
 * [Hardckor ](http://forum.task-force.ru/index.php?action=profile;u=14) for the help with graphics.
 * [Blender](http://arma3.ru/forums/index.php/user/41-blender/) for the fonts.
-* [vinniefalco](https://github.com/vinniefalco) for  [DSP Filter](https://github.com/vinniefalco/DSPFilters).
+* [vinniefalco](https://github.com/vinniefalco) for [DSP Filter](https://github.com/vinniefalco/DSPFilters).
 * [WOG](http://wogames.info/) and [TRUE](http://wogames.info/profile/TRUE/) personally for the help in testing.
 * [Music DSP Collection](https://github.com/music-dsp-collection) for the compressor.
 * [Avi](http://arma3.ru/forums/index.php/user/715-avi/) for the code review.
 * [andrey-zakharov](https://github.com/andrey-zakharov) ([Vaulter](http://arma3.ru/forums/index.php/user/1328-vaulter/)) for the help in development.
 * Dina for translating.
+* [Zealot](http://forums.bistudio.com/member.php?125460-zealot111) for the help in development and useful scripts.
+* [NouberNou](http://forums.bistudio.com/member.php?56560-NouberNou) for advice and competition.
+* [Megagoth1702](http://forums.unitedoperations.net/index.php/user/2271-megagoth1702/) for its old job of emulating the radio sound.
+* [Naught](http://forums.unitedoperations.net/index.php/user/6555-naught/) for code review.
+* [Andy230](http://forums.bistudio.com/member.php?100692-Andy230) for translating.
+* Everyone, who made video and arcticles with review.
+* Everyone user (especially who report bugs).
 * Sorry guys if I’ve forgot someone by chance.

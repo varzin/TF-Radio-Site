@@ -68,6 +68,7 @@ $html = MarkdownExtra::defaultTransform($text);
 				<p class="language-buttons">
 				  <a href="../" class="btn btn-default btn-xs">По-русски</a>
 				  <a href="en" class="btn btn-default btn-xs active">In English</a>
+          <a href="../sk" class="btn btn-default btn-xs">Slovenských</a>
 				</p>
 
 				<div class="clearfix">
@@ -84,12 +85,14 @@ $html = MarkdownExtra::defaultTransform($text);
 							<a href="http://arma3.ru/forums/index.php/user/41-blender/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 			title="Font">Blender</a>,
 							<a href="http://arma3.ru/forums/index.php/user/715-avi/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 				title="Code review">Avi</a>,
 							<span class="tooltip-trigger" data-toggle="tooltip" 																				title="Translate">Dina</span>,
-							<a href="http://arma3.ru/forums/index.php/user/715-avi/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 				title="Help in development">Andrey&nbsp;Zakharov</a>,
-							<a href="https://github.com/vinniefalco" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 								title="DSP Filters">Vinnie&nbsp;Falco</a>,
+							<a href="http://arma3.ru/forums/index.php/user/1328-vaulter/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 				title="Помощь в разработке">Андрей&nbsp;Захаров</a>,
+              <a href="https://github.com/vinniefalco" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 								title="DSP Filters">Vinnie&nbsp;Falco</a>,
 							<a href="http://task-force.ru" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 										title="Testing, support and help">TF&nbsp;squad</a>,
 							<a href="https://github.com/music-dsp-collection" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 					title="Compressor">Music&nbsp;DSP&nbsp;Collection</a>,
 							<a href="http://wogames.info" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 										title="Testing">WOG&nbsp;project</a>
-						</div>
+              <br/>
+              <span class="tooltip-trigger" data-toggle="tooltip" title="See at the bottom of the page">and others</span>.
+            </div>
 					</div>
 				</div>
 
