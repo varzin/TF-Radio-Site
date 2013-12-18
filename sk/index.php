@@ -68,7 +68,7 @@ $html = MarkdownExtra::defaultTransform($text);
 				<p class="language-buttons">
 				  <a href="../" class="btn btn-default btn-xs">По-русски</a>
 				  <a href="../en" class="btn btn-default btn-xs">In English</a>
-          <a href="sk" class="btn btn-default btn-xs active">Slovenských</a>
+          <a href="sk" class="btn btn-default btn-xs active">Slovensky</a>
 				</p>
 
 				<div class="clearfix">
