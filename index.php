@@ -98,7 +98,7 @@ $html = MarkdownExtra::defaultTransform($text);
 
 				<div class="clearfix">
 					<div class="pull-left margin-r-4">
-						<a href="https://github.com/michail-nikolaev/task-force-arma-3-radio/raw/master/releases/0.8.1.zip" class="btn btn-primary btn-lg">
+						<a href="https://github.com/michail-nikolaev/task-force-arma-3-radio/raw/master/releases/0.8.3.zip" class="btn btn-primary btn-lg">
 							<span class="fa fa-cloud-download fa-lg"></span>&nbsp;Скачать рацию
 						</a>
 						<p class="text-center opacity07 white" id="download-version"></p>
