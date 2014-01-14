@@ -13,7 +13,7 @@ spl_autoload_register(function($class){
 use \Michelf\MarkdownExtra;
 
 # Read file and pass content through the Markdown praser
-$text = file_get_contents('../res/README_EN.md');
+$text = file_get_contents('../res/README_SK.md');
 $html = MarkdownExtra::defaultTransform($text);
 
 ?>
@@ -67,8 +67,8 @@ $html = MarkdownExtra::defaultTransform($text);
 
 				<p class="language-buttons">
 				  <a href="../" class="btn btn-default btn-xs">По-русски</a>
-				  <a href="en" class="btn btn-default btn-xs active">In English</a>
-          <a href="../sk" class="btn btn-default btn-xs">Slovensky</a>
+				  <a href="../en" class="btn btn-default btn-xs">In English</a>
+          <a href="sk" class="btn btn-default btn-xs active">Slovensky</a>
 				</p>
 
 				<div class="clearfix">

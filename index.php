@@ -68,6 +68,7 @@ $html = MarkdownExtra::defaultTransform($text);
 				<p class="language-buttons">
 				  <a href="../" class="btn btn-default btn-xs active">По-русски</a>
 				  <a href="/en" class="btn btn-default btn-xs">In English</a>
+          <a href="/sk" class="btn btn-default btn-xs">Slovensky</a>
 				</p>
 
 				<div class="clearfix">
@@ -78,24 +79,26 @@ $html = MarkdownExtra::defaultTransform($text);
 					<div class="credit">
 						Благодарности
 						<div class="name thanks">
-							<a href="http://forum.task-force.ru/index.php?action=profile;u=7" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 	title="Графика, документация, сайт">[TF]MTF</a>,
-							<a href="http://forum.task-force.ru/index.php?action=profile;u=14" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 	title="Графика">[TF]Hardckor</a>,
-							<a href="http://wogames.info/profile/TRUE/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 							title="Тестирование">TRUE</a>,
-							<a href="http://arma3.ru/forums/index.php/user/41-blender/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 			title="Шрифт">Блендер</a>,
-							<a href="http://arma3.ru/forums/index.php/user/715-avi/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 				title="Кодревью">Avi</a>,
-							<span class="tooltip-trigger" data-toggle="tooltip" 																				title="Перевод">Дина</span>,
-							<a href="http://arma3.ru/forums/index.php/user/715-avi/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 				title="Помощь в разработке">Андрей&nbsp;Захаров</a>,
-							<a href="https://github.com/vinniefalco" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 								title="DSP фильтры">Vinnie&nbsp;Falco</a>,
-							<a href="http://task-force.ru" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 										title="Тестирование, поддержка и помощь">отряд&nbsp;TF</a>,
-							<a href="https://github.com/music-dsp-collection" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 					title="Компрессор">Music&nbsp;DSP&nbsp;Collection</a>,
-							<a href="http://wogames.info" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 										title="Тестирование">проект&nbsp;WOG</a>
-						</div>
+            <a href="http://forum.task-force.ru/index.php?action=profile;u=7" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 	title="Графика, документация, сайт">[TF]MTF</a>,
+            <a href="http://forum.task-force.ru/index.php?action=profile;u=14" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 	title="Графика">[TF]Hardckor</a>,
+            <a href="http://wogames.info/profile/TRUE/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 							title="Тестирование">TRUE</a>,
+            <a href="http://arma3.ru/forums/index.php/user/41-blender/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 			title="Шрифт">Блендер</a>,
+            <a href="http://arma3.ru/forums/index.php/user/715-avi/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 				title="Кодревью">Avi</a>,
+            <span class="tooltip-trigger" data-toggle="tooltip" 																				title="Перевод">Дина</span>,
+            <a href="http://arma3.ru/forums/index.php/user/1328-vaulter/" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 				title="Помощь в разработке">Андрей&nbsp;Захаров</a>,
+            <a href="https://github.com/vinniefalco" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 								title="DSP фильтры">Vinnie&nbsp;Falco</a>,
+            <a href="http://task-force.ru" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 										title="Тестирование, поддержка и помощь">отряд&nbsp;TF</a>,
+            <a href="https://github.com/music-dsp-collection" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 					title="Компрессор">Music&nbsp;DSP&nbsp;Collection</a>,
+            <a href="http://wogames.info" target="_blank" class="tooltip-trigger" data-toggle="tooltip" 										title="Тестирование">проект&nbsp;WOG</a>,
+            <br/>
+            <span class="tooltip-trigger" data-toggle="tooltip" title="Смотри внизу страницы">и другие</span>.
+          </div>
 					</div>
 				</div>
 
 				<div class="clearfix">
 					<div class="pull-left margin-r-4">
-						<a href="https://github.com/michail-nikolaev/task-force-arma-3-radio/raw/master/releases/0.8.1.zip" class="btn btn-primary btn-lg">
+						<a href="https://github.com/michail-nikolaev/task-force-arma-3-radio/raw/master/releases/0.8.3.zip" class="btn btn-primary btn-lg">
 							<span class="fa fa-cloud-download fa-lg"></span>&nbsp;Скачать рацию
 						</a>
 						<p class="text-center opacity07 white" id="download-version"></p>

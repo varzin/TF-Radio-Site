@@ -40,7 +40,7 @@
 
 <?php
 
-$to = "mtf.svt@gmail.com";
+$to = "Michail Nikolaev <michail.nikolaev@gmail.com>";
 $email = $_REQUEST['email'];
 $text = $_REQUEST['message'];
 
